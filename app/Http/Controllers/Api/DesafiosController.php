@@ -23,7 +23,6 @@ class DesafiosController extends BaseController
     public function getDesafio(int $desafio)
     {
         $desafios =  [
-            0 => 'zero',
             1 => 'primeiro',
             2 => 'segundo',
             3 => 'terceiro',
@@ -40,7 +39,7 @@ class DesafiosController extends BaseController
             return view($desafios[$desafio]);
         }
 
-        return view('404');
+        return redirect()->away('https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1');
     }
 
 
