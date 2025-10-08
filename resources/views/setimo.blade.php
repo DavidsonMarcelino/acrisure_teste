@@ -39,7 +39,7 @@
         $('#enviar').click(function() {
             $.ajax({
                 url: '/api/v1/setimo',
-                type: 'GET',
+                type: 'POST',
                 data: {
                     frase1: '[' + $('#frase1').val() + ']',
                     frase2: '[' + $('#frase2').val() + ']',

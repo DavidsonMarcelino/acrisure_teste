@@ -37,7 +37,7 @@
         $('.btn-primary').click(function() {
             $.ajax({
                 url: '/api/v1/primeiro',
-                type: 'GET',
+                type: 'POST',
                 data: {
                     frase: $('#frase').val(),
                 },

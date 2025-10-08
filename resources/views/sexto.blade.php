@@ -36,7 +36,7 @@
         $('#enviar').click(function() {
             $.ajax({
                 url: '/api/v1/sexto',
-                type: 'GET',
+                type: 'POST',
                 data: {
                     frase: $('#frase').val(),
                 },

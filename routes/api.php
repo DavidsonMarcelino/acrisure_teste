@@ -58,14 +58,14 @@ Route::group([
         |--------------------------------------------------------------------------
         */
         Route::resource('desafios', 'DesafiosController');
-        Route::get('primeiro', 'DesafiosController@primeiro');
-        Route::get('segundo', 'DesafiosController@segundo');
-        Route::get('terceiro', 'DesafiosController@terceiro');
-        Route::get('quarto', 'DesafiosController@quarto');
-        Route::get('quinto', 'DesafiosController@quinto');
-        Route::get('sexto', 'DesafiosController@sexto');
-        Route::get('setimo', 'DesafiosController@setimo');
-        Route::get('oitavo', 'DesafiosController@oitavo');
-        Route::get('nono', 'DesafiosController@nono');
+        Route::post('primeiro', 'DesafiosController@primeiro');
+        Route::post('segundo', 'DesafiosController@segundo');
+        Route::post('terceiro', 'DesafiosController@terceiro');
+        Route::post('quarto', 'DesafiosController@quarto');
+        Route::post('quinto', 'DesafiosController@quinto');
+        Route::post('sexto', 'DesafiosController@sexto');
+        Route::post('setimo', 'DesafiosController@setimo');
+        Route::post('oitavo', 'DesafiosController@oitavo');
+        Route::post('nono', 'DesafiosController@nono');
     });
 });

@@ -1,4 +1,43 @@
 
+# Orientações de uso
+Olá, ao decorrer do desenvolvimento desse teste, eu notei que tinha tempo de sobra e decidi me empolgar um pouco mais com ele, então o projeto funciona de duas formas:
+
+Para ambos, ligue o servidor:
+
+```php
+php artisan serve
+```
+
+# Primeira forma: chamando diretamente a API
+
+Basta chamar as rotas, todas são POST e esperam os dados como parâmetros da requisição, o que permite a requisição ser testada via Postman.
+
+```url
+http://localhost:8000/api/v1/primeiro
+```
+
+Note que após a raiz, há também um path indicando a API (/api/v1), e depois, o número do desafio como posição, abaixo deixarei todos por nome:
+
+primeiro (espera receber uma string "frase")
+segundo  (espera receber uma string "frase")
+terceiro (espera receber uma string "numeros")
+quarto   (espera receber duas strings "frase1" e "frase2")
+quinto   (espera receber uma string "frase")
+sexto    (espera receber uma string "frase")
+setimo   (espera receber dois arrays "frase1" e "frase2")
+oitavo   (espera receber uma string "frase")
+nono     (espera receber uma string "frase")
+
+# Segunda forma: front-end
+
+Desenvolvi um pequeno front com alguns blade's simples, JQuery e Bootstrap.
+
+Para acessa-lo, após iniciar o servidor, basta acessar a raiz, lá há o caminho para todos os desafios.
+
+```url
+http://localhost:8000/
+```
+
 # Desafio de Programação
 
 Crie um repositório no seu GITHUB, resolva as questões abaixo e nos envie o link para avaliarmos as respostas.  

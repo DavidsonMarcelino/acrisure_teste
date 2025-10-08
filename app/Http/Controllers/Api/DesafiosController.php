@@ -63,7 +63,7 @@ class DesafiosController extends BaseController
         if(count($numeros) > 1)
         {
             sort($numeros);
-            
+
             return $numeros[0] . ' ' . $numeros[count($numeros)-1];
         }
 
@@ -78,7 +78,7 @@ class DesafiosController extends BaseController
     public function quinto(Request $request)
     {
         $palavras = explode(' ', $request->frase);
-        
+
         foreach($palavras as $key => $palavra)
         {
             $palavras[$key] = strrev($palavra);
@@ -101,12 +101,11 @@ class DesafiosController extends BaseController
     public function setimo(Request $request)
     {
         try{
-
             $array1 = json_decode($request->frase1);
             $array2 = json_decode($request->frase2);
-            
+
             $interseccao = array_values(array_intersect($array1, $array2));
-            
+
             return $interseccao;
         } catch(\Exception $e) {
             return response()->json(['error' => 'Por favor, digite os número utilizando a vírgula como separador, ex: 1,2,3,4,5'], 500);

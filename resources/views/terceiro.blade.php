@@ -37,7 +37,7 @@
         $('#enviar').click(function() {
             $.ajax({
                 url: '/api/v1/terceiro',
-                type: 'GET',
+                type: 'POST',
                 data: {
                     numeros: $('#numeros').val(),
                 },

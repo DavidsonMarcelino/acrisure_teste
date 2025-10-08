@@ -46,7 +46,7 @@
         $('#enviar').click(function() {
             $.ajax({
                 url: '/api/v1/segundo',
-                type: 'GET',
+                type: 'POST',
                 data: {
                     frase: $('#frase').val(),
                 },
