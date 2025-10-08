@@ -18,8 +18,8 @@ Route::group([
     Route::post('login', 'AuthController@auth');
 
     Route::group([
-        'middleware' => ['api', 'jwt.auth'],
-        // 'middleware' => ['api']
+        // 'middleware' => ['api', 'jwt.auth'],
+        'middleware' => ['api']
     ], function ($router) {
 
         /*
@@ -54,10 +54,18 @@ Route::group([
   
         /*
         |--------------------------------------------------------------------------
-        | Paciente Routes
+        | Desafios Routes
         |--------------------------------------------------------------------------
         */
-        Route::resource('pacientes', 'PacienteController');
-
+        Route::resource('desafios', 'DesafiosController');
+        Route::get('primeiro', 'DesafiosController@primeiro');
+        Route::get('segundo', 'DesafiosController@segundo');
+        Route::get('terceiro', 'DesafiosController@terceiro');
+        Route::get('quarto', 'DesafiosController@quarto');
+        Route::get('quinto', 'DesafiosController@quinto');
+        Route::get('sexto', 'DesafiosController@sexto');
+        Route::get('setimo', 'DesafiosController@setimo');
+        Route::get('oitavo', 'DesafiosController@oitavo');
+        Route::get('nono', 'DesafiosController@nono');
     });
 });

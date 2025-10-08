@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('Siga os padrões e lembre-se que estamos de olho em você :)');
+    return view('home');
 });
+
+Route::get('desafio/{numero}', 'Api\DesafiosController@getDesafio');
 
 Route::get('/user/image/{id}/{hash?}', 'Api\UserController@image');
