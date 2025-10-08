@@ -18,15 +18,15 @@ http://localhost:8000/api/v1/primeiro
 
 Note que após a raiz, há também um path indicando a API (/api/v1), e depois, o número do desafio como posição, abaixo deixarei todos por nome:
 
-primeiro (espera receber uma string "frase")
-segundo  (espera receber uma string "frase")
-terceiro (espera receber uma string "numeros")
-quarto   (espera receber duas strings "frase1" e "frase2")
-quinto   (espera receber uma string "frase")
-sexto    (espera receber uma string "frase")
-setimo   (espera receber dois arrays "frase1" e "frase2")
-oitavo   (espera receber uma string "frase")
-nono     (espera receber uma string "frase")
+- primeiro (espera receber uma string "frase")
+- segundo  (espera receber uma string "frase")
+- terceiro (espera receber uma string "numeros")
+- quarto   (espera receber duas strings "frase1" e "frase2")
+- quinto   (espera receber uma string "frase")
+- sexto    (espera receber uma string "frase")
+- setimo   (espera receber dois arrays "frase1" e "frase2")
+- oitavo   (espera receber uma string "frase")
+- nono     (espera receber uma string "frase")
 
 # Segunda forma: front-end
 
